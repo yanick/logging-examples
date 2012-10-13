@@ -3,13 +3,10 @@ package Foo;
 use strict;
 use warnings;
 
-use Log::Contextual::SimpleLogger;
-use Log::Contextual qw/ :log /,
-       -default_logger => Log::Contextual::SimpleLogger->new;
+use Log::Contextual qw/ :log /;
 
 sub foo {
     log_info { "foo'ing around" };
 }
-
 
 1;
